@@ -17,7 +17,10 @@ extracting_directory = './out/extraction/'
 temp_archive = './out/temp/temp.7z'
 
 archive_single_file(file_to_be_compressed, archive_to_be_created)
+print("Archive created")
 split_file(archive_to_be_created, multipart_directory)
+print("Archive split into parts")
 merge_parts(multipart_directory, temp_archive)
+print("Parts merged")
 extract_archive(temp_archive, extracting_directory)
-
+print("Archive extracted")
