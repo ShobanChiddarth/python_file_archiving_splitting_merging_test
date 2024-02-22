@@ -1,5 +1,5 @@
-from main import *
 import os
+from main import *
 
 if not os.path.exists('./out'):
     os.makedirs('./out')
